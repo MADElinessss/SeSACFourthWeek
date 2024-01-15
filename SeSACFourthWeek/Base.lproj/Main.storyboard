@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="deH-zj-CTl">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie-->
+        <scene sceneID="8gY-bU-vJy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Movie" id="9rG-hz-flQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="esL-ye-BBQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WHG-6l-ONF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1907" y="-621"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="x7j-JD-wNm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Second" id="09u-04-4Hx" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="muW-VA-Nub"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EsV-xs-UZc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1915" y="72"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="QCq-Kh-i7Q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Third" id="8uL-ED-K6m" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mYt-eh-cz8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ioa-q2-1Dq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1904" y="796"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IsB-Iu-rOI">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="deH-zj-CTl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2oU-3f-KD2">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="u3f-SR-dTt" kind="relationship" relationship="viewControllers" id="Tsc-ph-FSi"/>
+                        <segue destination="cCZ-q8-HXF" kind="relationship" relationship="viewControllers" id="cJ6-4K-5yb"/>
+                        <segue destination="qWe-u7-ulQ" kind="relationship" relationship="viewControllers" id="qor-OK-7rN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PqN-bq-Q8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="-46"/>
+        </scene>
+        <!--Movie-->
+        <scene sceneID="YBV-Xv-gcf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u3f-SR-dTt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Movie" image="movieclapper.fill" catalog="system" id="ANn-jl-ifq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nGR-hd-4jI">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9rG-hz-flQ" kind="relationship" relationship="rootViewController" id="MPh-EF-kcg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Nt-cm-ONB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1295" y="-621"/>
+        </scene>
+        <!--Popcorn-->
+        <scene sceneID="9fq-Wa-NzO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cCZ-q8-HXF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Popcorn" image="popcorn.fill" catalog="system" id="am9-oO-Zu1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dd8-Xb-OLC">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="09u-04-4Hx" kind="relationship" relationship="rootViewController" id="LWU-TF-Nzk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7c-Ki-2yj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1294" y="72"/>
+        </scene>
+        <!--Carrot-->
+        <scene sceneID="0ft-cT-Rbo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qWe-u7-ulQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Carrot" image="carrot.fill" catalog="system" id="27E-Ee-Vz0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gmm-wW-fOl">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8uL-ED-K6m" kind="relationship" relationship="rootViewController" id="IST-8l-5RY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3Y-ju-cAY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1294" y="796"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="carrot.fill" catalog="system" width="128" height="122"/>
+        <image name="movieclapper.fill" catalog="system" width="128" height="113"/>
+        <image name="popcorn.fill" catalog="system" width="98" height="128"/>
+    </resources>
+</document>
